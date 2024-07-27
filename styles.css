@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    --default-border: 0.1rem solid rgba(0, 0, 0, 0.15);
+}
+
+body{
+    font-size: 1.4rem;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: 
+        ". . . . ."
+        ". hero . form ."
+        ". . . . ."
+    ;
+    gap: 8.5rem;
+}
+
+main{
+    grid-area: form;
+}
+
+aside{
+    grid-area: hero;
+}
+
+aside h1{
+    font-size: 6.4rem;
+    font-weight: 500;
+    text-align: center;;
+}
+
+span{
+    color: #ff5678;
+}
+
+main{
+    width: 50rem;
+    height: 48rem;
+    border: var(--default-border);
+    padding: 5.7rem 4.4rem;
+    border-radius: 1.2rem;
+    position: relative;
+}
+
+main h2{
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+main .actions{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a{
+    color: white;
+    margin-top: 5.4rem;
+    border-radius: 1.2rem;
+    border-style: none;
+    font-size: 2.4rem;
+    font-weight: 500;
+    background-color: #35e6e9;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .actions a + a{
+    background-color: #ff5678;
+    margin-top: 4.8rem;
+}
+
+ main footer{
+    text-align: center;
+ }
+
+ main footer p{
+    font-size: 1.6rem;
+    margin-top: 8rem;
+ }
+ main footer a{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    display: block;
+ }
+
+
+/*---------- Página de Cadastro de Entidades---------- */
+
+main form{
+    margin-top: 1.6rem;
+}
+
+main form label{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+main form input, main form select{
+    width: 499px;
+    height: 5.5rem;
+    padding-left: 1rem;
+    
+    background-color: white;
+    border: var(--default-border);
+    border-radius: 1.2rem;
+}
+
+main form .points{
+    position: relative;
+}
+
+main form input + button{
+    position: absolute;
+    right: calc(-2.2rem - 0.9rem);
+    top: calc(2.75rem + 2.4rem);
+    background-color: transparent;
+    border: none;
+    color: #35e6e9;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+main header{
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+main header i{
+    font-size: 2.4rem;
+    color: #ff5678;
+}
+
+main form option, main form select, main form input{
+    font-size: 1.4rem;
+    font-family: "roboto";
+    font-weight: 300;
+    appearance: none;
+}
+
+main form .select-div{
+    position: relative;
+}
+
+main form .select-div::after{
+    top: 2rem;
+    right: 1rem;
+    content: '\f107';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    font-size: 1.8rem;
+    position: absolute;
+    color: rgb(158, 158, 158);
+
+}
